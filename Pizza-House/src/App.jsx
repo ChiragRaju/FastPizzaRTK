@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     ViTE
+     Hello World
        
     </>
   )
