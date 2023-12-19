@@ -6,16 +6,14 @@ import React from "react";
 import Loader from "./Loader";
 
 const AppLayout = () => {
-    const navigation=useNavigation()
-   const isLoading=navigation.state==='loading';
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
   return (
     <div className="layout">
-        {isLoading && <Loader/>}
+      {isLoading && <Loader />}
       <Header />
 
-      <main>
-        <h1>Content</h1>
-      </main>
+      <main></main>
       <Outlet />
       <CartOverview />
     </div>
